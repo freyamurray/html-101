@@ -1,0 +1,65 @@
+
+body {
+    font-family: "Comic Sans MS";
+    padding: 0 1rem;
+    line-height: 1.5rem;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+kbd {
+    background-color: rgb(235, 236, 237);
+    padding: .5%;
+}
+
+.container  {
+    padding: 1rem;
+    border: solid;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.home-button {
+    display: flex;
+    position: absolute;
+    left: 0;
+    margin-left: 1.5rem;
+}
+
+button {
+    border: solid;
+    background-color: #fff;
+    cursor: pointer;
+    font-family: "Comic Sans MS";
+    font-size: 1rem;
+}
+
+.answer-button {
+    margin: auto;
+}
+
+.hidden {
+    display: none;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tag:hover {
+    background-color: orange;
+    cursor:default;
+}
+
+.element:hover {
+    background-color: greenyellow;
+    cursor:default;
+}

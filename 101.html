@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What is HTML?</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    <header>
+        <form class="home-button" action="index.html">
+            <button>home</button>
+        </form>
+        <h1>1. What is HTML?</h1>
+    </header>
+    <main>
+        <div class="container" id="intro">
+            <h3>What is HTML?</h3>
+            <p><b>HTML</b> is short for <b>H</b>yper<b>T</b>ext <b>M</b>arkup <b>L</b>anguage.</p>
+            <p>HTML is one of the building blocks of the internet. Every single website on the internet is made of HTML. <b>Browsers</b> take raw HTML and display it as finished websites.</p>
+        </div>
+        <div class="container task" id="task">
+            <h3>Task</h3>
+            <p>Right click anywhere on this page. Select "Inspect Element" to look at HTML in action. You can also use the keyboard shortcut <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>C</kbd>.</p>
+            <p><b>What do you notice about the source code?</b></p>
+            <button class="answer-button" onclick="reveal()">click to reveal the answer</button>
+        </div>
+        <div class="container hidden" id="answer">
+            <h3>&ltTags&gt</h3>
+            <p>HTML looks quite complicated when it hasn't been displayed by a browser. It's full of expressions that look like <code>&ltthis&gt</code>, with less than and greater than symbols on either side. These are called HTML <b>tags</b>.</p>
+            <p>Tags tell the browser how to show the raw code. We'll look at some examples of this in the next session.</p>
+        </div>
+        <div class="container">
+            <h3>Key Terms</h3>
+            <p><b>HTML:</b> Hypertext Markeup Language.</p>
+            <p><b>Browser:</b> A tool for accessing the internet, e.g. Chrome, Firefox or Safari.</p>
+            <p><b>Tag:</b> A key part of constructing HTML, contained within <code>&lt &gt</code>s.</p>
+        </div>
+        <footer>
+            <button style="visibility: hidden;">previous</button>
+            <a href="102.html"><button>next</button></a>
+        </footer>
+    </main>
+</body>
+</html>
