@@ -1,13 +1,23 @@
 :root {
-    --bg-col: white;
+    --bg-col: rgb(193, 227, 247);
+    --box-col: #ffffff;
+    --border-col: black;
     --text-col: black;
     --link-col: blue;
+    --task-col: rgb(190, 5, 5);
+    --h-text: black;
+    --border-thickness: 3px;
 }
 
 .dark {
     --bg-col: black;
+    --box-col: #212b33;
+    --border-col: #141f2a;
     --text-col: white;
-    --link-col: dodgerblue;
+    --link-col: rgb(99, 175, 252);
+    --task-col: rgb(255, 166, 0);
+    --h-text: black;
+    --border-thickness: 1px;
 }
 
 .themeswitch {
@@ -33,16 +43,21 @@ header {
 }
 
 kbd {
-    background-color: rgb(235, 236, 237);
-    color: black;
+    background-color: var(--bg-col);
+    color: var(--text-col);
     padding: .5%;
+}
+
+h3 {
+    text-decoration: underline;
 }
 
 .container  {
     padding: 1rem;
     border: solid;
     border-radius: 1rem;
-    background-color: var(--bg-col);
+    border-color: var(--border-col);
+    background-color: var(--box-col);
     margin-bottom: 1rem;
     display: flex;
     flex-direction: column;
@@ -57,7 +72,8 @@ kbd {
 
 button {
     border: solid;
-    background-color: var(--bg-col);
+    border-radius: .4rem;
+    background-color: var(--box-col);
     color: var(--text-col);
     cursor: pointer;
     font-family: "Comic Sans MS";
@@ -67,7 +83,7 @@ button {
 
 button:hover {
     background-color: var(--text-col);
-    color: var(--bg-col);
+    color: var(--box-col);
     border-color: var(--text-col);
 }
 
@@ -87,14 +103,33 @@ footer {
 
 .tag:hover {
     background-color: orange;
+    color: var(--h-text);
     cursor:default;
 }
 
 .element:hover {
     background-color: greenyellow;
     cursor:default;
+    color: var(--h-text);
 }
 
 .link {
     color: var(--link-col);
+}
+
+#task {
+    border: solid var(--border-thickness) var(--task-col);
+}
+
+.answer-button {
+    color: var(--task-col);
+}
+
+.answer-button:hover {
+    background-color: var(--task-col);
+    border-color: var(--task-col);
+}
+
+.kt {
+    color: var(--task-col);
 }
