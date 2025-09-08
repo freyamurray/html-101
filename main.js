@@ -5,6 +5,6 @@ function reveal() {
 
 function themeSwitch() {
     var element = document.body;
-    element.classList.toggle("dark");
+    element.classList.toggle("light");
 }
 

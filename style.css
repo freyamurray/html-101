@@ -1,4 +1,4 @@
-:root {
+.light {
     --bg-col: rgb(193, 227, 247);
     --box-col: #ffffff;
     --border-col: black;
@@ -9,7 +9,7 @@
     --border-thickness: 3px;
 }
 
-.dark {
+:root {
     --bg-col: black;
     --box-col: #212b33;
     --border-col: #141f2a;
